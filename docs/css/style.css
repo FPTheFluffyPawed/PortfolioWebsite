@@ -73,7 +73,7 @@ Main Sections
     justify-content: center;
     height: 100%;
     width: 100%;
-    transition: opacity 1000ms ease-in-out, width 300ms ease-out;
+    transition: opacity 1000ms ease-in-out, width 300ms ease-out, height 300ms ease-out;
     
 }
 
@@ -91,10 +91,6 @@ Main Sections
 
 .main-flex div[class^="section"] a:hover ~ .bg-color {
     background-color: var(--clr-black-opacity-1);
-}
-
-.main-flex div[class^="section"]:hover {
-    width: calc(100% + 1500px);
 }
 
 .main-flex > .section-on {
@@ -150,5 +146,22 @@ Main Sections
     }
     100% {
         opacity: 0;
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 630px) {
+    .main-flex {
+        flex-direction: column;
+    }
+
+    .main-flex div[class^="section"]:hover {
+        height: calc(100% + 200px);
+    }
+}
+
+@media only screen and (min-width: 630px) {
+    .main-flex div[class^="section"]:hover {
+        width: calc(100% + 1500px);
     }
 }
