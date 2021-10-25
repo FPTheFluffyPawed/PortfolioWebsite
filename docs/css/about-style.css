@@ -23,9 +23,7 @@ a {
 
 .nav {
     position: fixed;
-    width: 5rem;
-    height: 100vh;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(71, 76, 87);
     transition: width 200ms ease-out;
 }
 
@@ -42,10 +40,6 @@ a {
     align-items: center;
     height: 100vh;
     z-index: -1;
-}
-
-.nav:hover {
-    width: 18rem;
 }
 
 .nav:hover .arrow {
@@ -66,6 +60,7 @@ a {
 .nav-title {
     font-size: 0;
     display: flex;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     padding: 3rem;
@@ -94,13 +89,89 @@ a {
     align-items: center;
     justify-content: center;
     height: 5rem;
+    transition: transform 400ms ease-out, text-shadow 200ms linear;
 }
 
 .nav-menu a:hover {
-    font-size: 1.8rem;
+    transform: scale(1.4);
+    text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
 }
 
 .main-wrapper {
-    margin-left: 4rem;
     padding: 2rem;
+    text-align: justify;
+}
+
+.main-wrapper a {
+    font-weight: 900;
+    color: rgb(89, 117, 177);
+    transition: text-shadow 200ms linear;
+}
+
+.main-wrapper img {
+    display: block;
+    margin: auto;
+}
+
+.main-wrapper a:hover {
+    text-shadow: 0px 0px 10px rgb(150, 150, 150);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 630px) {
+    .nav {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    
+    .nav-title {
+        display: none;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .nav-menu li {
+        font-size: 1.4rem;
+        width: 100%;
+        opacity: 1;
+        transition: all 300ms ease-out;
+    }
+
+    .nav-menu .text {
+        display: none;
+    }
+
+    .main-wrapper img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 630px) {
+    .nav {
+        width: 5rem;
+        height: 100vh;
+    }
+    
+    .nav:hover {
+        width: 18rem;
+    }
+
+    .nav-menu i {
+        display: none;
+    }
+
+    .main-wrapper {
+        margin-left: 4rem;
+    }
+
+    .main-wrapper img {
+        width: 50%;
+    }
 }
