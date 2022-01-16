@@ -6,3 +6,9 @@ function fhdz() {
 
     document.write('+' + a + b + c+ d);
 };
+
+function uiad() {
+    a = 'iameriodev';
+    b = 'gmail.com';
+    document.write(a + '@' + b);
+}

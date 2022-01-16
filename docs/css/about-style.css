@@ -192,6 +192,14 @@ span.buv.opfh:after {
     transition: all 400ms ease-out;
 }
 
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
 /* Animations */
 
 @keyframes fadeInAnimation {
@@ -239,6 +247,15 @@ span.buv.opfh:after {
         width: 100%;
     }
 
+    .images img:first-child {
+        width: 100%;
+    }
+
+    .images img {
+        width: 100%;
+        margin: auto;
+    }
+
     .contacts-table {
         flex-direction: column;
     }
@@ -272,6 +289,14 @@ span.buv.opfh:after {
 
     .main-wrapper img {
         width: 50%;
+    }
+
+    .images img:first-child {
+        width: 400px;
+    }
+
+    .images img {
+        width: 400px;
     }
 
     .contacts-table span {

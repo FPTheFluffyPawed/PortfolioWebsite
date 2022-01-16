@@ -105,7 +105,7 @@ Main Sections
 }
 
 .main-flex .section-1 {
-    background-image: url("../assets/images/1.jpg");
+    background-image: url("../assets/images/face.png");
     background-size: cover;
     background-position: center;
 }
@@ -133,7 +133,7 @@ Main Sections
 }
 
 .main-flex .section-3 {
-    background-image: url("../assets/images/3.jpg");
+    background-image: url("../assets/images/contacts.jpg");
     background-size: cover;
     background-position: center;
 }
